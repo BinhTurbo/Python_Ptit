@@ -1,6 +1,5 @@
 import math
 
-
 def isPrime(n):
     if n < 2:
         return False
