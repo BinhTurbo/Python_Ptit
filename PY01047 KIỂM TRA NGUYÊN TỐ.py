@@ -7,4 +7,4 @@ def isPrime (n):
 
 for t in range (int(input())):
     n = input()
-    print("YES" if isPrime(int(n[len(n)-4:])) else "NO")
+    print("YES" if isPrime(int(n[-4:])) else "NO")

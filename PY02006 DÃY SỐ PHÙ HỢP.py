@@ -1,13 +1,12 @@
-def check(A, B):
+def checkArray(A, B):
     for i in range(len(A)):
         if A[i] > B[i]:
             return False
     return True
-
-test = int(input())
-while (test > 0):
+for test in range(int(input())):
     n = int(input())
-    A = sorted([int(i) for i in input().split()])
-    B = sorted([int(i) for i in input().split()])
-    print("YES" if check(A, B) else "NO")
-    test -= 1
+    A = [int(i) for i in input().split()]
+    A.sort()
+    B = [int(i) for i in input().split()]
+    B.sort()
+    print("YES" if checkArray(A, B) else "NO")

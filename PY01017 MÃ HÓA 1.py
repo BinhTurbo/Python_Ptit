@@ -1,6 +1,3 @@
-from itertools import count
-
-
 test = int(input())
 for t in range(0,test):
     s = input() + ' '

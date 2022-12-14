@@ -3,7 +3,7 @@ while True:
     s = input()
     if s.strip() == '0':
         break
-    k, s = s.split()
+    k, s = [str(i) for i in s.split(' ')]
     k = int(k)
     temp = ''
     for i in s:
